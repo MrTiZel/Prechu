@@ -1,0 +1,30 @@
+@mixin basicWidth{
+  width: 1000px;
+  margin: 0 auto;
+}
+@mixin piddLeftRight {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+@mixin FlexCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin FlexBetweenCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin FlexBetweenStretch {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+@mixin FlexCommon() {
+  display: $MyFlex;
+  justify-content: $MyFlex;
+  align-items: $MyFlex;
+}

@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import "partials/params";
 @import "partials/mixins";
 
-$color: blue;
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  background: $bgBody;
+  color: $basicColorText;
+  font-family: $fontBody;
+  line-height: 1.2;
+}
+a{
+  color: $basicColorText;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
 
-h1 {
-  color: $color;
+
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 500px){
+
 }

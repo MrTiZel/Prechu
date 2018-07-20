@@ -1,0 +1,46 @@
+@import "partials/params";
+@import "partials/mixins";
+
+#mainNav{
+  @include basicWidth;
+
+  .row{
+    @include piddLeftRight;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: flex-end;
+
+    .logo{
+
+      h1{
+        display: flex;
+        align-items: center;
+        color: $colorTextLogo;
+        font-weight: lighter;
+        font-size: 42px;
+        i{
+          color: #fff;
+          background: $bgIconLogo;
+          font-size: 25px;
+          padding: 12px;
+          border-radius: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .navUl{
+      ul{
+        @include FlexBetweenCenter;
+        li{
+          a{
+            font-size: 20px;
+          }
+          a:hover{
+            padding-bottom: 20px;
+            border-bottom: $colorBorderNav 3px solid;
+          }
+        }
+      }
+    }
+  }
+}
