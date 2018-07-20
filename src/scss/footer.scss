@@ -1,2 +1,14 @@
 @import "partials/params";
 @import "partials/mixins";
+
+
+#mainFooter{
+  @include FlexCenterCenter;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: lighten($basicColorText, 40%) 1px solid;
+
+  p{
+    font-size: 15px;
+  }
+}
