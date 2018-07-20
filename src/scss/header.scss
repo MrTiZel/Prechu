@@ -10,6 +10,7 @@
     @include basicWidth;
     height: 484px;
     @include FlexCenterCenter;
+    @include piddLeftRight;
 
     .phone {
       img {

@@ -1,2 +1,76 @@
 @import "partials/params";
 @import "partials/mixins";
+
+#mainContent{
+  #contrag{
+    @include basicWidth;
+    @include piddLeftRight;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    .row{
+      justify-content: space-around;
+
+      .pencil, .screen, .basket{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h2{
+          font-size: 20px;
+          color: $colorTextH2;
+          margin-top: 30px;
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+      .pencil{
+        .pencilIcon{
+          background: $bgColorIconPencil;
+          width: 110px;
+          padding: 40px;
+          border-radius: 100px;
+          img{
+            width: 78px;
+            height: 108px;
+          }
+        }
+      }
+      .screen{
+
+        .screenIcon{
+          background: $bgColorIconScreen;
+          width: 90px;
+          padding: 50px;
+          border-radius: 150px;
+          img{
+            width: 95px;
+            height: 81px;
+          }
+        }
+
+      }
+      .basket{
+
+        .basketIcon{
+          background: $bgColorIconBasket;
+          width: 100px;
+          padding: 50px;
+          border-radius: 150px;
+          img{
+            width: 98px;
+            height: 90px;
+          }
+        }
+      }
+    }
+  }
+  #shopping{
+    @include basicWidth;
+    @include piddLeftRight;
+  }
+}
