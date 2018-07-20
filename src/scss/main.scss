@@ -21,64 +21,8 @@ ul{
 }
 
 
+@media screen and (max-width: 768px){
 
-@media screen and (max-width: 769px){
-
-  .phone{
-    img{
-      max-width: 120% !important;
-    }
-
-  }
-  .TextH{
-    position: relative;
-    left: -15px !important;
-    h2{
-      font-size:18px !important;
-    }
-    p{
-      font-size:12px !important;
-    }
-    a{
-      font-size:12px !important;
-      width: 110px !important;
-      position: relative;
-      left: -5px !important;
-    }
-  }
-  #mainContent{
-      article{
-        flex-flow: row !important;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        margin-left: 10px;
-        .pencilIcon{min-width: 110px !important;padding: 30px !important;}
-        .screenIcon{padding: 40px !important;}
-        .basketIcon{padding: 40px !important;}
-
-        .articP{
-          display: flex;
-          flex-flow: column !important;
-          align-items: flex-start;
-          margin-left: 20px;
-          text-align: left;
-        }
-      }
-  }
-  #shopping{
-    .row{
-      flex-flow: column !important;
-      justify-content: center !important;
-      align-items: center !important;
-
-      .boxText{
-        padding: 0 !important;
-        margin: 10px !important;
-      }
-
-    }
-
-  }
 }
 @media screen and (max-width: 500px){
 
