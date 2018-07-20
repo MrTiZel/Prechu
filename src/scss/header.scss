@@ -1,2 +1,47 @@
 @import "partials/params";
 @import "partials/mixins";
+
+#mainHeader{
+  @include FlexCenterCenter;
+  background: $bgHeader repeat-x;
+  background-size: cover;
+  background-position: center center;
+  height: 484px;
+
+  .phone{
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .TextH{
+    color: $colorTextHeader;
+    margin-left: 100px;
+    line-height: 1.6;
+    h2{
+      font-weight: lighter;
+      font-size: 42px;
+    }
+    p{
+      font-size: 26px;
+    }
+
+    a{
+      @include FlexCenterCenter;
+      font-size: 22px;
+      color: $colorTextHeader;
+      background: $bgButtunHeader;
+      box-sizing: border-box;
+      padding: 5px;
+      width: 175px;
+      position: relative;
+      top: 20px;
+      left: 15px;
+
+      i{
+        margin-right: 10px;
+        font-size: 26px;
+      }
+    }
+  }
+}
