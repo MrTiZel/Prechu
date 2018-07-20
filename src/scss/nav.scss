@@ -3,7 +3,6 @@
 
 #mainNav{
   @include basicWidth;
-
   .row{
     @include piddLeftRight;
     padding-top: 20px;
