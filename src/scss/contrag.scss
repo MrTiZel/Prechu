@@ -6,7 +6,7 @@
     @include basicWidth;
     @include piddLeftRight;
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 
     .row{
       justify-content: space-around;
@@ -32,8 +32,8 @@
         .pencilIcon{
           background: $bgColorIconPencil;
           width: 110px;
-          padding: 40px;
-          border-radius: 100px;
+          padding: 50px;
+          border-radius: 110px;
           img{
             width: 78px;
             height: 108px;
@@ -45,8 +45,8 @@
         .screenIcon{
           background: $bgColorIconScreen;
           width: 90px;
-          padding: 50px;
-          border-radius: 150px;
+          padding: 60px;
+          border-radius: 110px;
           img{
             width: 95px;
             height: 81px;
@@ -60,7 +60,7 @@
           background: $bgColorIconBasket;
           width: 100px;
           padding: 50px;
-          border-radius: 150px;
+          border-radius: 100px;
           img{
             width: 98px;
             height: 90px;
@@ -72,5 +72,40 @@
   #shopping{
     @include basicWidth;
     @include piddLeftRight;
+    margin-bottom: 50px;
+
+    .row{
+      justify-content: center;
+      align-items:flex-end;
+
+      .boxCart{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        span{
+          font-size: 42px;
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+
+        img{
+          width: 371px;
+          height: 279px;
+        }
+      }
+      .boxText{
+        line-height: 2.5;
+        margin-left: 100px;
+
+        h2{
+          font-size: 26px;
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 15px;
+        }
+      }
+    }
   }
 }
